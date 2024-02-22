@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <img id="logo" src="img/logo.png" />
+      <div class="navtop">
+        <div class="links">
+          <a href="">Die Metzgerei</a>
+          <a href="">Dry Aged</a>
+          <a href="">Fleischversand</a>
+          <a href="">Events/Kurse</a>
+          <a href="">Partyservice</a>
+          <a href="">Tagesessen</a>
+          <a href="">Impressum</a>
+          <a href="">Kontakt</a>
+          <div class="pdf">
+            <img src="img/pdf.png" /><a href="">download</a>
+          </div>
+        </div>
+        <div class="mobilepdf">
+          <img src="img/pdf.png" /><a href="">download</a>
+          <img id="hamburger" src="img/hamburger.png" onclick="showNav()" />
+        </div>
+      </div>
+      <div class="navbottom">
+        <strong>Christmas opentime:</strong>
+        <p>
+          <img src="img/clock.png" /><span>Opentime:</span> Di. - Fr.:
+          07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
+        </p>
+      </div>
+    </nav>
+
+    <!-- <div id="mobilenavigation" style="display: none" class="mobilenavigation">
+      <ul id="navul">
+        <li><a href="">Die Metzgerei</a></li>
+        <li><a href="">Dry Aged</a></li>
+        <li><a href="">Fleischversand</a></li>
+        <li><a href="">Events/Kurse</a></li>
+        <li><a href="">Partyservice</a></li>
+        <li><a href="">Tagesessen</a></li>
+        <li><a href="">Impressum</a></li>
+        <li><a href="">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/slider1.png" alt="" /></div>
+        <div class="swiper-slide"><img src="img/slider2.png" alt="" /></div>
+        <div class="swiper-slide"><img src="img/slider3.png" alt="" /></div>
+        <div class="swiper-slide"><img src="img/slider4.png" alt="" /></div>
+        <div class="swiper-slide"><img src="img/slider5.png" alt="" /></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="maintext">
+      <h1>Heiko Brath</h1>
+      <h1>Metzgermeister</h1>
+      <p>
+        Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
+        argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol
+        Spritz probatus pertinax.
+      </p>
+    </div>
+
+    <div class="dryaged">
+      <div class="mobile">
+        <h1>Heiko Brath</h1>
+        <h1>Metzgermeister</h1>
+        <p>
+          Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
+          argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol
+          Spritz probatus pertinax.
+        </p>
+      </div>
+      <div class="dleft">
+        <div class="ltext">
+          <h1>Dry aged</h1>
+          <h2>Alte Wutz, Dry Aged</h2>
+          <p>
+            Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
+            Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim
+            veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
+            Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+            Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
+            Stuttgart. id latine indoctum complectitur HugoClub Mate mea meliore
+            denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
+            assentior.
+          </p>
+        </div>
+        <div class="lbuttons">
+          <button>Dry aged</button>
+          <button>Alte Wurtz</button>
+        </div>
+      </div>
+
+      <div class="dright">
+        <div class="rtop">
+          <img src="img/meat1.png" />
+        </div>
+        <div class="rbottom">
+          <img src="img/meat2.png" />
+          <img src="img/meat3.png" />
+          <img src="img/meat4.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="plate">
+      <div class="pleft">
+        <h1>Buchen Sie den</h1>
+        <h1>Grillkurs jetzt</h1>
+        <ol>
+          <li>professioneller Lehrer</li>
+          <li>ausgezeichneter Metzger</li>
+          <li>1 Tag</li>
+          <li>lernen Sie die Kunst des Grillens</li>
+        </ol>
+        <button>Grillkurs</button>
+      </div>
+      <div class="pright">
+        <img src="img/plate.png" />
+      </div>
+    </div>
+
+    <div class="handwerk">
+      <div class="ftext">
+        <h2>Das Handwerk</h2>
+        <h3>alles über unsere Hausgemachte Produkte</h3>
+        <p>
+          Halt amet, consectetur Handtasche elit, sed do eiusmod tempor
+          Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim
+          veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen
+          Sie deutsch aliquip ex ea commodo consequat.
+          <br /><br />
+          Wiener Schnitzel aute irure dolor in Guten Tag mollit anim Stuttgart.
+          <br /><br />
+          id latine indoctum complectitur HugoClub Mate mea meliore denique
+          nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior
+        </p>
+
+        <button>Das Handwerk</button>
+      </div>
+
+      <img class="masodikvonal" src="/img/vonal.png" />
+    </div>
+
+    <div class="menu">
+      <img src="img/elso.png" />
+      <img src="img/masodik.png" />
+      <img src="img/harmadik.png" />
+      <img src="img/negyedik.png" />
+    </div>
+
+    <div class="fuszerek">
+      <div class="fleft">
+        <img src="img/fuszerek.png" />
+      </div>
+      <div class="fright">
+        <h1>Custome spices for your meat</h1>
+        <h3>Turnbeutel nostrud exercitation ullamco Sprechen Sie deutsch</h3>
+        <p>
+          Odio principes iracundia Müller Rice pri. Ut vel solum mandamus,
+          Kartoffelkopf natum adversarium ei ius, diam Schmetterling honestatis
+          eum.
+        </p>
+        <p>
+          Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod
+          tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad
+          minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi
+          Sprechen Sie deutsch aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+
+    <div class="hus">
+      <div class="kep">
+        <img src="img/hus.png" />
+      </div>
+      <h1>Fleischversand</h1>
+      <button>Jetzt bestellen</button>
+    </div>
+
+    <div class="dijak">
+      <div class="dileft">
+        <img src="img/genussnetz.png" />
+      </div>
+      <div class="diright">
+        <h2>Metzgerei Brath ist Mitglied</h2>
+        <h2>im Genussnetzwerk</h2>
+        <button>Gehen zu site</button>
+      </div>
+    </div>
+
+    <div class="harmadikvonal">
+      <img src="/img/vonal.png" />
+    </div>
+
+    <div class="ermek">
+      <h2>Auszeichnungen</h2>
+      <div class="ermegrid">
+        <div class="erme">
+          <img src="img/erme1.png" />
+          <p>Tollit argumentum genau Saepe lobortis</p>
+        </div>
+        <div class="erme">
+          <img src="img/erme2.png" />
+          <p>Schneewittchen denique</p>
+        </div>
+        <div class="erme">
+          <img src="img/erme3.png" />
+          <p>Grimms Märchen expetenda</p>
+        </div>
+        <div class="erme">
+          <img src="img/erme4.png" />
+          <p>Mettwurst mei ullum gloriatur.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="negyedikvonal">
+      <img src="/img/vonal.png" />
+    </div>
+    
+    <div class="kartyak">
+      <div class="arrows">
+        <img src="img/leftarrow.png" onclick="prevCard()" />
+        <img src="img/rightarrow.png" onclick="prevCard()" />
+      </div>
+      <div class="top">
+        <h3>Empfehlungs</h3>
+        <h1>Was die Leute über uns sagen</h1>
+      </div>
+      <div class="cards">
+        <div class="cleft">
+          <p>
+            Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener
+            Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim
+            Stuttgart.
+          </p>
+          <p>Maria Kartofeln</p>
+        </div>
+        <div class="cmiddle">
+          <img src="img/grill.png" />
+          <img src="img/csillag.png" />
+          <p>
+            Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod
+            tempor Stuttgart ut labore et dolore magna Luftballons Ut Turnbeutel
+            nostrud exercitation ullamco .
+          </p>
+          <p>Halling Tobias</p>
+          <p>Koch</p>
+          <img id="macskakaparas" src="img/macskakaparas.png" />
+        </div>
+        <div class="cright">
+          <p>
+            Achtung fur atine indoctum complectitur HugoClub Mate mea meliore
+            denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod
+            assentior.
+          </p>
+          <p>Rene Weinstein</p>
+        </div>
+      </div>
+      <button>Alle Berichte</button>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <footer>
+      <div class="top">
+        <div class="first">
+          <ul>
+            <li>Klauprechtstraße 25 76137 Karlsruhe, Germany</li>
+            <li>+49 721 358060</li>
+            <li>info@partyservice-brath.de</li>
+          </ul>
+        </div>
+        <div class="second">
+          <img id="logo" src="img/logo.png" />
+        </div>
+        <div class="third">
+          <div class="title">
+            <h3>Besuchen Sie uns auf:</h3>
+          </div>
+          <div class="images">
+            <img src="img/twitter.png" />
+            <img src="img/facebook.png" />
+            <img src="img/insta.png" />
+            <img src="img/youtube.png" />
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          © 2020 by Metzgerei Heiko Brath GmbH, Deutschland
+        </div>
+        <div class="right">Code and design by StudioPresent</div>
+      </div>
+    </footer> -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>
